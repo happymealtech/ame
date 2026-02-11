@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happymealtech - AMEN Digital Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap');
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+            color: #d4af37;
+            overflow-x: hidden;
+        }
 
+        h1, h2, h3, .titolo-antico { font-family: 'Cinzel', serif; }
+
+        .card-elevated { 
+            box-shadow: 0 0 50px rgba(212, 175, 55, 0.3); 
+            border: 1px solid #d4af37;
+            transition: all 0.5s ease;
+            background: rgba(0,0,0,0.9);
+        }
+
+        .card-subtle { 
+            transform: scale(0.85); 
+            opacity: 0.6;
+            transition: all 0.4s ease;
+        }
+        
+        .card-subtle:hover { opacity: 1; transform: scale(0.9); }
+
+        .btn-buy {
+            background: linear-gradient(90deg, #d4af37 0%, #f2d06b 100%);
+            color: black;
+            font-weight: 800;
+            padding: 15px 35px;
+            border-radius: 2px;
+            text-
