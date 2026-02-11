@@ -2,40 +2,104 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happymealtech - AMEN Digital Collection</title>
+    <title>AMEN - Digital Silver Collection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@200;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
         
         body { 
-            font-family: 'Montserrat', sans-serif; 
-            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
-            color: #d4af37;
-            overflow-x: hidden;
+            font-family: 'Space Grotesk', sans-serif; 
+            background: #0d0d0d; 
+            color: #e0e0e0; 
         }
 
-        h1, h2, h3, .titolo-antico { font-family: 'Cinzel', serif; }
-
-        .card-elevated { 
-            box-shadow: 0 0 50px rgba(212, 175, 55, 0.3); 
-            border: 1px solid #d4af37;
-            transition: all 0.5s ease;
-            background: rgba(0,0,0,0.9);
+        /* Cornice Argento Satinato */
+        .silver-border {
+            border: 1px solid #c0c0c0;
+            background: linear-gradient(145deg, #151515, #1d1d1d);
+            box-shadow: 0 0 30px rgba(192, 192, 192, 0.05);
         }
 
-        .card-subtle { 
-            transform: scale(0.85); 
-            opacity: 0.6;
-            transition: all 0.4s ease;
+        .btn-silver {
+            background: #e0e0e0;
+            color: #000;
+            padding: 10px 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
         }
-        
-        .card-subtle:hover { opacity: 1; transform: scale(0.9); }
 
-        .btn-buy {
-            background: linear-gradient(90deg, #d4af37 0%, #f2d06b 100%);
-            color: black;
-            font-weight: 800;
-            padding: 15px 35px;
-            border-radius: 2px;
-            text-
+        .btn-silver:hover {
+            background: #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        .disclaimer-box {
+            border-left: 2px solid #ff4d4d;
+            background: rgba(255, 77, 77, 0.05);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-20">
+
+    <div class="max-w-4xl mx-auto silver-border p-8 md:p-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            <div class="relative">
+                <img src="https://happymealtech.github.io/ame/AMEN.jpeg" 
+                     class="w-full shadow-2xl border border-gray-800 grayscale" 
+                     alt="AMEN Token Image">
+                <div class="absolute -bottom-4 -right-4 bg-black p-2 border border-gray-700">
+                    <p class="text-[8px] tracking-widest uppercase">Asset ID: AMEN</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h1 class="text-5xl font-light tracking-tighter uppercase">AMEN</h1>
+                
+                <div class="disclaimer-box">
+                    <p class="text-[10px] text-gray-400 leading-tight uppercase font-bold">
+                        ⚠️ AVVISO: Questo token è un oggetto digitale da collezione registrato su Stellar. 
+                        Non ha valore monetario, finanziario o di investimento.
+                    </p>
+                </div>
+
+                <p class="text-sm text-gray-400 font-light">
+                    L'essenza dell'artigianato sacro distillata in forma digitale. 
+                    Emesso l'11 Febbraio 2026 tramite l'issuer verificato.
+                </p>
+
+                <div class="pt-6 flex items-center gap-6">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK&color=e0e0e0&bgcolor=0d0d0d" 
+                         class="w-24 h-24 border border-gray-700 p-1" 
+                         alt="QR Code LOBSTR">
+                    
+                    <div>
+                        <a href="https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" 
+                           target="_blank" 
+                           class="btn-silver inline-block">
+                            Acquista
+                        </a>
+                        <p class="text-[9px] mt-2 text-gray-500 uppercase tracking-widest">
+                            Scan to trade on LOBSTR
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-8 border-t border-gray-800">
+                    <p class="text-[9px] font-mono text-gray-600 break-all">
+                        ISSUER: GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-20 text-center text-[9px] text-gray-600 uppercase tracking-[0.5em]">
+        © 2026 Happymealtech | Platinum Collection
+    </footer>
+
+</body>
+       
