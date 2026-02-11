@@ -1,44 +1,87 @@
-<!DOCTYPE html>
+
+                <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>AMEN - Platinum Asset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEN - Platinum Asset Collection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0a0a; color: #d1d1d1; font-family: sans-serif; }
-        .silver-gradient {
-            background: linear-gradient(145deg, #1a1a1a, #262626);
-            border: 1px solid #4a4a4a;
+        body { 
+            background-color: #0a0a0a; 
+            color: #d1d1d1; 
+            font-family: 'Inter', sans-serif; 
+        }
+        .silver-card {
+            background: linear-gradient(145deg, #151515, #1f1f1f);
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
         .btn-buy {
-            background-color: #e5e5e5;
-            color: black;
-            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 12px 24px;
             font-weight: bold;
-            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
             display: inline-block;
+        }
+        .btn-buy:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
+<body class="flex items-center justify-center min-h-screen p-6">
 
-    <div class="max-w-4xl w-full silver-gradient p-8 shadow-2xl">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <img src="AMEN.jpeg" class="w-full border border-gray-700 grayscale shadow-lg" alt="AMEN Asset">
+    <div class="max-w-5xl w-full silver-card p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="relative">
+                <img src="AMEN.jpeg" 
+                     class="w-full shadow-2xl border border-gray-800" 
+                     alt="AMEN Asset Original">
+                <div class="absolute bottom-2 right-2 bg-black/50 px-2 py-1">
+                    <p class="text-[8px] tracking-widest uppercase text-white">Verified Asset</p>
+                </div>
             </div>
 
-            <div class="space-y-4">
-                <h1 class="text-4xl font-light tracking-widest uppercase text-white">AMEN</h1>
-                <p class="text-xs text-red-500 font-bold uppercase">⚠️ Disclaimer: Token senza valore finanziario.</p>
-                <p class="text-sm text-gray-400">Pezzo unico della collezione artigianale Happymealtech su rete Stellar.</p>
+            <div class="space-y-6">
+                <h1 class="text-5xl font-bold tracking-tighter text-white uppercase">AMEN</h1>
                 
-                <div class="pt-6 border-t border-gray-800">
-                    <p class="text-[10px] text-gray-500 mb-4">SCANSIONA PER LOBSTR:</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" class="w-20 h-20 border border-white p-1">
-                        <a href="https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" target="_blank" class="btn-buy">ACQUISTA</a>
+                <div class="border-l-2 border-red-600 pl-4 py-1">
+                    <p class="text-[10px] text-red-500 font-bold uppercase tracking-tighter">
+                        ⚠️ DISCLAIMER: Token digitale da collezione. Non ha valore monetario o finanziario intrinseco.
+                    </p>
+                </div>
+
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    L'eccellenza dell'artigianato sacro su Blockchain Stellar. Pezzo unico della New Era Collection 2026.
+                </p>
+                
+                <div class="pt-8 border-t border-gray-800">
+                    <p class="text-[10px] text-gray-500 mb-4 tracking-widest uppercase">Acquisto diretto tramite Wallet:</p>
+                    <div class="flex items-center gap-6">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" 
+                             class="w-24 h-24 border border-white p-1 bg-white" 
+                             alt="QR Code LOBSTR">
+                        
+                        <div class="space-y-3">
+                            <a href="https://lobstr.co/trade/AMEN:GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK" 
+                               target="_blank" 
+                               class="btn-buy">
+                                Acquista su LOBSTR
+                            </a>
+                            <p class="text-[9px] text-gray-600 font-mono italic">Inquadra o clicca per scambiare</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="pt-6">
+                    <p class="text-[8px] font-mono text-gray-700 break-all uppercase">
+                        Issuer: GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK
+                    </p>
                 </div>
             </div>
         </div>
