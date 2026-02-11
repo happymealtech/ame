@@ -1,1 +1,27 @@
+# Configurazione Ufficiale Token AMEN
+# Percorso: https://happymealtech.github.io/.well-known/stellar.toml
 
+NETWORK_PASSPHRASE="Public Global Stellar Network ; October 2014"
+
+[DOCUMENTATION]
+ORG_NAME="Happymealtech - New Era"
+ORG_URL="https://happymealtech.github.io/gio/"
+ORG_DESCRIPTION="Collezione esclusiva di asset digitali artigianali su Blockchain Stellar."
+ORG_LOGO="https://happymealtech.github.io/ame/AMEN.jpeg"
+
+[[CURRENCIES]]
+code="AMEN"
+issuer="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
+display_decimals=2
+name="AMEN"
+desc="L'essenza dell'artigianato sacro. Token unico emesso l'11 Febbraio 2026."
+image="https://happymealtech.github.io/ame/AMEN.jpeg"
+conditions="Asset a tiratura limitata con diritti di proprietà digitale."
+
+[[ACCOUNTS]]
+name="Issuer Account (Emittente)"
+public_key="GD22GBKOUYWC3C2QDZPMT27GBD2L6STAPXN2QEZB3HX4GNISW3P7XSQK"
+
+[[ACCOUNTS]]
+name="Distribution Account (Distributore)"
+public_key="GDQ6UGSNP4W6B6JSDHLUBMGQIPALJX5X6ORM65D7YKSLKARWQJYFX4V"
